@@ -1,0 +1,13 @@
+<JOB>
+  <Client>
+    <First Name>ABC</First Name>
+  </Client>
+  <JobTimes>
+    <JobTime>
+      <TotalHours>1</TotalHours
+    </JobTime>
+  </JobTimes>
+  <JobHardwareItems>
+  <JobHardware>
+  <Quantity>1</Quantity>
+</JOB>
