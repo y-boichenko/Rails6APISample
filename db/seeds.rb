@@ -7,16 +7,18 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-User.create(email: 'boichenko.yaroslav@gmail.com', password: '123123123', password_confirmation: '123123123')
+user = User.create(email: 'boichenko.yaroslav@gmail.com', password: '123123123', password_confirmation: '123123123')
+user.set_google_secret
 
-5.times do
-  job = Job.create(quantity: rand(1..10))
-
-  rand(1..5).times do
-    job.job_times.create(total_hours: rand(1..10))
-  end
-
-  rand(1..3).times do
-    job.job_hardware_items.create(title: Faker::Color.color_name)
-  end
-end
+# jobs
+# 5.times do
+#   job = Job.create(quantity: rand(1..10))
+#
+#   rand(1..5).times do
+#     job.job_times.create(total_hours: rand(1..10))
+#   end
+#
+#   rand(1..3).times do
+#     job.job_hardware_items.create(title: Faker::Color.color_name)
+#   end
+# end
